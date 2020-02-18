@@ -1,7 +1,7 @@
 {
   "author": "Jon Doe",
   "spec_version": "3.0",
-  "version": "0.1 alpha",
+  "resume_version": "0.1 alpha",
   "options": {},
   "sections": [
     {
@@ -12,7 +12,6 @@
         {
           "component": "title",
           "options": {
-            "name_colour": "#444444",
             "name": {
               "colour": "#444444",
               "align": "left"
@@ -44,13 +43,11 @@
               "end": "AAAA-MM-JJ"
             },
             "list": [
-              // opt
               "item1",
               "item2"
             ]
           }
-        },
-        {}
+        }
       ]
     }
   ]
