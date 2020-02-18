@@ -1,0 +1,57 @@
+{
+  "author": "Jon Doe",
+  "spec_version": "3.0",
+  "version": "0.1 alpha",
+  "options": {},
+  "sections": [
+    {
+      "name": "",
+      "options": {},
+      "type": "header",
+      "slides": [
+        {
+          "component": "title",
+          "options": {
+            "name_colour": "#444444",
+            "name": {
+              "colour": "#444444",
+              "align": "left"
+            }
+          },
+          "content": {
+            "name": "Pierre Kohler",
+            "title": "Étudiant Ingénieur HES en télécommunication, Spé. Sécurité de l’information"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Expérience professionnelle",
+      "type": "timeline",
+      "slides": [
+        {
+          "component": "event",
+          "options": {
+            "icons": true,
+            "date_format": "jj.mm.aaaa"
+          },
+          "content": {
+            "brief": "Stagière – plein temps",
+            "company": "Fimm SA",
+            "location": "2900 Porrentruy",
+            "date": {
+              "start": "AAAA-MM-JJ",
+              "end": "AAAA-MM-JJ"
+            },
+            "list": [
+              // opt
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        {}
+      ]
+    }
+  ]
+}
