@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "options": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "object",
+          "properties": {
+            "colour": {
+              "type": "string",
+              "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+              "default": "#000000"
+            },
+            "align": {
+              "type": "string",
+              "pattern": "^(left|right)$",
+              "default": "left"
+            }
+          }
+        },
+        "title": {
+          "type": "object",
+          "$comment": "TODO, ADD MORE DETAILS"
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "title"
+    },
+    "options": {
+      "$ref": "#/definitions/options"
+    },
+    "content": {
+      "$ref": "#/definitions/content"
+    }
+  },
+  "required": [
+    "component",
+    "content"
+  ]
+}

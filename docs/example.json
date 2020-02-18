@@ -32,15 +32,15 @@
           "component": "event",
           "options": {
             "icons": true,
-            "date_format": "jj.mm.aaaa"
+            "date_format": "dd.mm.yyyy"
           },
           "content": {
             "brief": "Stagière – plein temps",
             "company": "Fimm SA",
             "location": "2900 Porrentruy",
             "date": {
-              "start": "AAAA-MM-JJ",
-              "end": "AAAA-MM-JJ"
+              "start": "2000-04-30",
+              "end": "2007-04-30"
             },
             "list": [
               "item1",

@@ -37,8 +37,7 @@
         "slides": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/slide",
-            "type": "object"
+            "$ref": "#/definitions/slide"
           },
           "default": []
         }

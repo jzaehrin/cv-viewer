@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "options": {
+      "type": "object",
+      "properties": {
+        "icons": {
+          "type": "boolean",
+          "default": true
+        },
+        "date_format": {
+          "type": "string",
+          "pattern": "^(?=[^m]*mm[^m]*$)(?=[^d]*dd[^d]*$)[^y]*(yyyy|yy)[^y]*$"
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "brief": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "date": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date"
+            },
+            "end": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "brief",
+        "company",
+        "location",
+        "date",
+        "list"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "component": {
+      "type": "string",
+      "pattern": "event"
+    },
+    "options": {
+      "$ref": "#/definitions/options"
+    },
+    "content": {
+      "$ref": "#/definitions/content"
+    }
+  },
+  "required": [
+    "component",
+    "content"
+  ]
+}
